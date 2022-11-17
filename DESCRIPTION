@@ -1,0 +1,18 @@
+Package: GBIO.Final
+Title: Functions for Data Processing
+Version: 0.0.0.9000
+Authors@R: 
+    person("Anna", "Lander", , "anna.lander@selu.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Contains functions that can help clean, process, and plot large data sets
+License: MIT + file LICENSE
+Depends:
+  R(> 3.0)
+Imports: 
+  tidyverse
+Suggests:
+  knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2

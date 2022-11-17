@@ -1,0 +1,31 @@
+---
+title: "README.Rmd"
+author: "Anna Lander"
+date: "2022-11-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Introduction
+Enter a short description of your R package. (This package is intended for use on data sets with)
+
++ What does it do?
+(Allows the assortment of data into only the parts wished to be worked with, so that NA values can be cleared only from rows or columns that it is applicable for (for instance, an NA on ))
++ What type of data is it meant to work with?
++ What are major outputs of your R package?
+
+## Installation
+
++ Area there any R packages yours depends on?
+
+```{r}
+
+install.packages(whateverthepackageis)
+
+```
+
+## Usage Examples
+
+In this section, you want to provide some context for why someone might want to do whatever it is that your R package does. 
