@@ -19,16 +19,17 @@ To install this package, enter the following code into your R console. This pack
 install.packages("remotes")
 library(remotes)
 
-remotes::install_github("annalander/GBio.Final")
-install.packages("GBio.Final")
+remotes::install_github("annalander/lander_pck")
+install.packages("GBIO.Final")
 library(GBIO.Final)
 
 ```
 
 
 #Downloading data for package
-
+```{r eval=FALSE, include=TRUE}
 download.file(url = "https://raw.githubusercontent.com/annalander/lander_pck/master/Data/AGP%2Bfield%2Bdata%2Bcopy.csv", destfile = "/cloud/project/Data/AGP+field+data+copy.csv")
+```
 
 #Functions in this Package: How to use them
 

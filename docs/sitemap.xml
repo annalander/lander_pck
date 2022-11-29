@@ -22,6 +22,21 @@
     <loc>/index.html</loc>
   </url>
   <url>
+    <loc>/reference/data_cleaning.html</loc>
+  </url>
+  <url>
+    <loc>/reference/histogram.html</loc>
+  </url>
+  <url>
     <loc>/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/lin_model.html</loc>
+  </url>
+  <url>
+    <loc>/reference/nona.html</loc>
+  </url>
+  <url>
+    <loc>/reference/point_plot.html</loc>
   </url>
 </urlset>

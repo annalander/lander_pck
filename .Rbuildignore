@@ -1,0 +1,6 @@
+^LICENSE\.md$
+^.*\.Rproj$
+^\.Rproj\.user$
+^GBIO.Final\.Rcheck$
+^GBIO.Final.*\.tar\.gz$
+^GBIO.Final.*\.tgz$
