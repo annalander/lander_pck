@@ -19,17 +19,32 @@ To install this package, enter the following code into your R console. This pack
 install.packages("remotes")
 library(remotes)
 
+install.packages("tidyverse")
+library(tidyverse)
+
+install.packages("ggplot2")
+library(ggplot2)
+
+
+```
+```{r}
 remotes::install_github("annalander/lander_pck")
 install.packages("GBIO.Final")
 library(GBIO.Final)
-
 ```
 
 
 #Downloading data for package
+
+Once you have downloaded the data, save it to a data frame called "AGP", this will be used for some of the functions. 
+
 ```{r eval=FALSE, include=TRUE}
-download.file(url = "https://raw.githubusercontent.com/annalander/lander_pck/master/Data/AGP%2Bfield%2Bdata%2Bcopy.csv", destfile = "/cloud/project/AGP+field+data+copy.csv")
+download.file(url = "https://raw.githubusercontent.com/annalander/lander_pck/master/Data/AGP%2Bfield%2Bdata%2Bcopy.csv", destfile = "/cloud/project/Data/AGP+field+data+copy.csv")
+
+AGP <- ("/cloud/project/Data/AGP+field+copy_data.csv")
 ```
+
+
 
 #Functions in this Package: How to use them
 
@@ -37,7 +52,8 @@ download.file(url = "https://raw.githubusercontent.com/annalander/lander_pck/mas
 
 This function creates a histogram of size classes for each amphibian collected in this data set.
 
-```{r}
+```{r,eval=FALSE}
+
 histogram <- function(AGP){
      AGP_hist <- ggplot(data = AGP, mapping = aes(x = svl)) + geom_histogram() + labs(title = "Snout-Vent Length in Amphibians", x = "Snout-Vent Length (mm)", y = "Number of Individuals") + xlim(0, 150)
      return(AGP_hist)
@@ -52,7 +68,8 @@ histogram(AGP)
 
 This function runs a linear model on the mass and snout-vent length of collected amphibian species. 
 
-```{r}
+```{r,eval=FALSE}
+
 lin_model <- function(filepath){
      AGP_raw <- read_csv("/cloud/project/Data/AGP+field+data+copy.csv")
      lin_data <- AGP_raw
@@ -67,9 +84,10 @@ lin_model(AGP_raw)
 
 ##NoNA
 
-This function is designed specifically to clear NA values from the given data set for better interpretation of data. 
+This function is designed specifically to clear NA values from the given data set for better interpretation of data. The AGP data set contains NA values for some important columns (like svl and mass)
 
-```{r}
+```{r,eval=FALSE}
+
 nona <- function(filepath){
   data_na <- read_csv(filepath)
   data_nona <- data_na %>% 
@@ -90,7 +108,7 @@ nona("/cloud/project/Data/AGP+field+data+copy.csv")
 
 This function will allow you to visualize the relationship of the mass of the collected amphibian specimens and the snout-vent length (SVL).
 
-```{r}
+```{r,eval=FALSE}
 
 point_plot <- function(critter){
   AGP %>% 
@@ -106,9 +124,10 @@ point_plot(AGP)
 
 ##Clean
 
-This function pulls specific columns from the amphibian data set (such as critter, svl, mass, and stage) and creates a data frame that can be utilized for other functions.
+This function pulls specific columns from the amphibian data set (critter, svl, mass, and stage) and creates a data frame that can be utilized for other functions. Use the filepath where you stored the function to run this function. 
 
-```{r}
+```{r,eval=FALSE}
+
 data_cleaning <- function(filepath){
   AGP_clean <- read_csv("/cloud/project/Data/AGP+field+data+copy.csv") %>% 
     select(critter, svl, mass, stage)

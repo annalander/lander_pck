@@ -4,10 +4,10 @@
 \alias{point_plot}
 \title{This function shows the relationship between mass and snout-vent length of amphibians}
 \usage{
-point_plot(critter)
+point_plot(AGP)
 }
 \arguments{
-\item{critter}{}
+\item{AGP}{}
 }
 \value{
 point plot displaying relationship between two variables

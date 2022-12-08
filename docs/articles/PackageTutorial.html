@@ -5,13 +5,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PackageTutorial • GBIO.Final</title>
+<title>Package Tutorial • GBIO.Final</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="PackageTutorial">
+<script src="../pkgdown.js"></script><meta property="og:title" content="Package Tutorial">
 <meta property="og:description" content="GBIO.Final">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -50,7 +50,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../articles/PackageTutorial.html">PackageTutorial</a>
+      <a href="../articles/PackageTutorial.html">Package Tutorial</a>
     </li>
   </ul>
 </li>
@@ -68,7 +68,7 @@
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>PackageTutorial</h1>
+      <h1 data-toc-skip>Package Tutorial</h1>
                         <h4 data-toc-skip class="author">Anna
 Lander</h4>
             
@@ -81,30 +81,118 @@ Lander</h4>
 
     
     
-<div class="section level2">
-<h2 id="an-introduction-to-my-r-package">An introduction to my R package<a class="anchor" aria-label="anchor" href="#an-introduction-to-my-r-package"></a>
-</h2>
-<p>My R package has <strong>five</strong> useful functions.</p>
-<p>We can double space to type to a new line.</p>
-</div>
-<div class="section level2">
-<h2 id="installation-instructions">Installation Instructions<a class="anchor" aria-label="anchor" href="#installation-instructions"></a>
-</h2>
+<p>#An introduction to my R package</p>
+<p>This R package is designed to analyze data from years of amphibian
+species collection at a North Dakota site. Multiple amphibian species
+were collected from this location during the summer months between 2001
+and 2013. This data has multiple questions that can be answered in this
+data set, and some of the functions within this package can help us form
+testable hypotheses of the given data.</p>
+<p>#Installing the R Package Lander_pkg</p>
+<p>To install this package, enter the following code into your R
+console. This package will include functions from tidyverse, as well as
+original functions.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"tidyverse"</span><span class="op">)</span></span>
-<span><span class="co">#Download package if needed</span></span></code></pre></div>
-<div class="figure">
-<img src="path/for/image" alt=""><p class="caption">Caption</p>
-</div>
-<p>It is possible to include <a href="wright-lab.org">hyperlinks</a></p>
-</div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## Installing package into '/tmp/RtmpzrCd0W/temp_libpath24ecd24972'</span></span>
+<span><span class="co">## (as 'lib' is unspecified)</span></span></code></pre>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://remotes.r-lib.org" class="external-link">remotes</a></span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"annalander/lander_pck"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## Downloading GitHub repo annalander/lander_pck@HEAD</span></span></code></pre>
+<pre><code><span><span class="co">## Running `R CMD build`...</span></span></code></pre>
+<pre><code><span><span class="co">## * checking for file ‘/tmp/Rtmpj9NHuo/remotes2da05cf361ca/annalander-lander_pck-5f5c1ab/DESCRIPTION’ ... OK</span></span>
+<span><span class="co">## * preparing ‘GBIO.Final’:</span></span>
+<span><span class="co">## * checking DESCRIPTION meta-information ... OK</span></span>
+<span><span class="co">## * checking for LF line-endings in source and make files and shell scripts</span></span>
+<span><span class="co">## * checking for empty or unneeded directories</span></span>
+<span><span class="co">## * building ‘GBIO.Final_0.0.0.9000.tar.gz’</span></span></code></pre>
+<pre><code><span><span class="co">## Installing package into '/tmp/RtmpzrCd0W/temp_libpath24ecd24972'</span></span>
+<span><span class="co">## (as 'lib' is unspecified)</span></span></code></pre>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"GBIO.Final"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## Installing package into '/tmp/RtmpzrCd0W/temp_libpath24ecd24972'</span></span>
+<span><span class="co">## (as 'lib' is unspecified)</span></span></code></pre>
+<pre><code><span><span class="co">## Warning: package 'GBIO.Final' is not available for this version of R</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## A version of this package for your version of R might be available elsewhere,</span></span>
+<span><span class="co">## see the ideas at</span></span>
+<span><span class="co">## https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages</span></span></code></pre>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">GBIO.Final</span><span class="op">)</span></span></code></pre></div>
+<p>#Downloading data for package</p>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/download.file.html" class="external-link">download.file</a></span><span class="op">(</span>url <span class="op">=</span> <span class="st">"https://raw.githubusercontent.com/annalander/lander_pck/master/Data/AGP%2Bfield%2Bdata%2Bcopy.csv"</span>, destfile <span class="op">=</span> <span class="st">"/cloud/project/AGP+field+data+copy.csv"</span><span class="op">)</span></span></code></pre></div>
+<p>#Functions in this Package: How to use them</p>
+<p>##Hist</p>
+<p>This function creates a histogram of size classes for each amphibian
+collected in this data set.</p>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">histogram</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">AGP</span><span class="op">)</span><span class="op">{</span></span>
+<span>     <span class="va">AGP_hist</span> <span class="op">&lt;-</span> <span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">AGP</span>, mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">svl</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fu">geom_histogram</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">labs</span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Snout-Vent Length in Amphibians"</span>, x <span class="op">=</span> <span class="st">"Snout-Vent Length (mm)"</span>, y <span class="op">=</span> <span class="st">"Number of Individuals"</span><span class="op">)</span> <span class="op">+</span> <span class="fu">xlim</span><span class="op">(</span><span class="fl">0</span>, <span class="fl">150</span><span class="op">)</span></span>
+<span>     <span class="kw"><a href="https://rdrr.io/r/base/function.html" class="external-link">return</a></span><span class="op">(</span><span class="va">AGP_hist</span><span class="op">)</span></span>
+<span><span class="op">}</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/histogram.html">histogram</a></span><span class="op">(</span><span class="va">AGP</span><span class="op">)</span></span></code></pre></div>
+<p>##LinMod</p>
+<p>This function runs a linear model on the mass and snout-vent length
+of collected amphibian species.</p>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">lin_model</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">filepath</span><span class="op">)</span><span class="op">{</span></span>
+<span>     <span class="va">AGP_raw</span> <span class="op">&lt;-</span> <span class="fu">read_csv</span><span class="op">(</span><span class="st">"/cloud/project/Data/AGP+field+data+copy.csv"</span><span class="op">)</span></span>
+<span>     <span class="va">lin_data</span> <span class="op">&lt;-</span> <span class="va">AGP_raw</span></span>
+<span>     <span class="va">model_fit</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html" class="external-link">lm</a></span><span class="op">(</span><span class="va">mass</span> <span class="op">~</span> <span class="va">svl</span>, data <span class="op">=</span> <span class="va">lin_data</span><span class="op">)</span></span>
+<span>     <span class="kw"><a href="https://rdrr.io/r/base/function.html" class="external-link">return</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">model_fit</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="op">}</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/lin_model.html">lin_model</a></span><span class="op">(</span><span class="va">AGP_raw</span><span class="op">)</span></span></code></pre></div>
+<p>##NoNA</p>
+<p>This function is designed specifically to clear NA values from the
+given data set for better interpretation of data.</p>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">nona</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">filepath</span><span class="op">)</span><span class="op">{</span></span>
+<span>  <span class="va">data_na</span> <span class="op">&lt;-</span> <span class="fu">read_csv</span><span class="op">(</span><span class="va">filepath</span><span class="op">)</span></span>
+<span>  <span class="va">data_nona</span> <span class="op">&lt;-</span> <span class="va">data_na</span> <span class="op">%&gt;%</span> </span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/stats/na.fail.html" class="external-link">na.omit</a></span><span class="op">(</span><span class="op">)</span></span>
+<span>  <span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">d_c</span><span class="op">)</span><span class="op">)</span> <span class="op">==</span> <span class="fl">0</span><span class="op">)</span><span class="op">{</span></span>
+<span>    <span class="kw"><a href="https://rdrr.io/r/base/function.html" class="external-link">return</a></span><span class="op">(</span><span class="va">data_nona</span><span class="op">)</span></span>
+<span>  <span class="op">}</span> <span class="kw">else</span> <span class="op">{</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="st">"Failure to omit NAs"</span><span class="op">)</span></span>
+<span>  <span class="op">}</span></span>
+<span><span class="op">}</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/nona.html">nona</a></span><span class="op">(</span><span class="st">"/cloud/project/Data/AGP+field+data+copy.csv"</span><span class="op">)</span></span></code></pre></div>
+<p>##LinModPlot</p>
+<p>This function will allow you to visualize the relationship of the
+mass of the collected amphibian specimens and the snout-vent length
+(SVL).</p>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">point_plot</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">critter</span><span class="op">)</span><span class="op">{</span></span>
+<span>  <span class="va">AGP</span> <span class="op">%&gt;%</span> </span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/stats/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">critter</span> <span class="op">==</span> <span class="st">"Tiger Salamander"</span><span class="op">)</span> </span>
+<span>  <span class="va">AGPpoint</span> <span class="op">&lt;-</span> <span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">AGP</span>, mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">svl</span>, y <span class="op">=</span> <span class="va">mass</span>, color <span class="op">=</span> <span class="va">stage</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">xlim</span><span class="op">(</span><span class="fl">0</span>,<span class="fl">150</span><span class="op">)</span> <span class="op">+</span> <span class="fu">ylim</span><span class="op">(</span><span class="fl">0</span>,<span class="fl">150</span><span class="op">)</span> <span class="op">+</span> <span class="fu">labs</span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Relationship Between Mass and Snout-Vent Length in Amphibians"</span>, x <span class="op">=</span> <span class="st">"Snout-Vent Length (mm)"</span>, y <span class="op">=</span> <span class="st">"Mass (g)"</span><span class="op">)</span></span>
+<span>  <span class="kw"><a href="https://rdrr.io/r/base/function.html" class="external-link">return</a></span><span class="op">(</span><span class="va">AGPpoint</span><span class="op">)</span></span>
+<span><span class="op">}</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/point_plot.html">point_plot</a></span><span class="op">(</span><span class="va">AGP</span><span class="op">)</span></span></code></pre></div>
+<p>##Clean</p>
+<p>This function pulls specific columns from the amphibian data set
+(such as critter, svl, mass, and stage) and creates a data frame that
+can be utilized for other functions.</p>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">data_cleaning</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">filepath</span><span class="op">)</span><span class="op">{</span></span>
+<span>  <span class="va">AGP_clean</span> <span class="op">&lt;-</span> <span class="fu">read_csv</span><span class="op">(</span><span class="st">"/cloud/project/Data/AGP+field+data+copy.csv"</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
+<span>    <span class="fu">select</span><span class="op">(</span><span class="va">critter</span>, <span class="va">svl</span>, <span class="va">mass</span>, <span class="va">stage</span><span class="op">)</span></span>
+<span>  <span class="kw"><a href="https://rdrr.io/r/base/function.html" class="external-link">return</a></span><span class="op">(</span><span class="va">AGP_clean</span><span class="op">)</span></span>
+<span><span class="op">}</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/data_cleaning.html">data_cleaning</a></span><span class="op">(</span><span class="va">AGP</span><span class="op">)</span></span></code></pre></div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
-    </nav>
-</div>
+      </div>
 
 </div>
 
