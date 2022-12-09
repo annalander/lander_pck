@@ -5,6 +5,7 @@
 #' @return Histogram of data
 #' 
 #' @examples histogram(AGP)
+#' @export
 
 histogram <- function(AGP){
      AGP_hist <- ggplot(data = AGP, mapping = aes(x = svl)) + geom_histogram() + labs(title = "Snout-Vent Length in Amphibians", x = "Snout-Vent Length (mm)", y = "Number of Individuals") + xlim(0, 150)

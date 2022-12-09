@@ -4,6 +4,7 @@
 #' @return linear model summary of mass and snout-vent length
 #' 
 #' @examples lin_model(AGP)
+#' @export
 
 lin_model <- function(filepath){
      AGP_raw <- read_csv("/cloud/project/Data/AGP+field+data+copy.csv")

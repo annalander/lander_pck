@@ -15,3 +15,6 @@ data frame with Critter, Mass, SVL, and Stage columns
 \description{
 This function selects for certain columns in the AGP data set
 }
+\examples{
+data_cleaning("/cloud/project/Data/AGP+field+data+copy.csv")
+}

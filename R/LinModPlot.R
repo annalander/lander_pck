@@ -5,6 +5,7 @@
 #' @return point plot displaying relationship between two variables 
 #' 
 #' @examples point_plot(AGP)
+#' @export
 
 
 point_plot <- function(AGP){

@@ -10,7 +10,7 @@ output: html_document
 
 This R package is designed to analyze data from years of amphibian species collection at a North Dakota site. Multiple amphibian species were collected from this location during the summer months between 2001 and 2013. This data has multiple questions that can be answered in this data set, and some of the functions within this package can help us form testable hypotheses of the given data. 
 
-#Installing the R Package Lander_pkg
+#Installing the R Package GBIO.Final
 
 To install this package, enter the following code into your R console. This package will include functions from tidyverse, as well as original functions.
 
