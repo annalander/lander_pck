@@ -5,6 +5,7 @@
 #' @return clean data set
 #' 
 #' @examples nona("/cloud/project/Data/AGP+field+data+copy.csv")
+#' @export
 
 
 nona <- function(filepath){

@@ -41,7 +41,7 @@ Once you have downloaded the data, save it to a data frame called "AGP", this wi
 ```{r eval=FALSE, include=TRUE}
 download.file(url = "https://raw.githubusercontent.com/annalander/lander_pck/master/Data/AGP%2Bfield%2Bdata%2Bcopy.csv", destfile = "/cloud/project/Data/AGP+field+data+copy.csv")
 
-AGP <- ("/cloud/project/Data/AGP+field+copy_data.csv")
+AGP <- read_csv("/cloud/project/Data/AGP+field+data+copy.csv")
 ```
 
 
@@ -77,7 +77,7 @@ lin_model <- function(filepath){
      return(summary(model_fit))
 }
 
-lin_model(AGP_raw)
+lin_model("/cloud/project/Data/AGP+field+data+copy.csv")
 
 ```
 
@@ -92,11 +92,7 @@ nona <- function(filepath){
   data_na <- read_csv(filepath)
   data_nona <- data_na %>% 
     na.omit()
-  if (sum(is.na(d_c)) == 0){
-    return(data_nona)
-  } else {
-    print("Failure to omit NAs")
-  }
+  return(data_nona)
 }
 
 nona("/cloud/project/Data/AGP+field+data+copy.csv")
